@@ -8413,7 +8413,7 @@ ${index.message}`;
                   className={`cursor-pointer mb-2 px-4 rounded-xl p-1 hover:text-[#ffffff] hover:bg-[#387478]
                      text-xs lg:text-sm font-semibold mr-2 flex items-center justify-center ${
                        selectedCategory === null
-                         ? "bg-[#629584] text-white"
+                         ? "bg-[#3b7b80] text-white"
                          : ""
                      }`}
                   onClick={() => handleCategoryClick(null)}
@@ -8427,7 +8427,7 @@ ${index.message}`;
                       key={category._id}
                       className={`bg-[#E2F1E7] hover:bg-[#387478] hover:text-[#ffffff] cursor-pointer px-5 ml-1 mr-2 py-1 mb-2 rounded-xl lg:text-sm md:text-sm text-xs sm:text-xs font-semibold ${
                         selectedCategory === category
-                          ? "bg-[#387478] text-white"
+                          ? "bg-[#3b7b80] text-white"
                           : ""
                       }`}
                       onClick={() => handleCategoryClick(category)}
@@ -8438,8 +8438,8 @@ ${index.message}`;
                     </span>
                   ))}
 
-                {categories.length > 4 && (
-                  <div className="flex items-center -mt-1">
+                {categories.length > 4 && ( 
+                  <div className="flex items-center -mt-1 ">
                     <button
                       className="  h-7 w-7 flex items-center justify-center rotate-90 cursor-pointer rounded-lg
                        bg-[#E2F1E7] hover:bg-[#387478] hover:text-[#ffffff]  p-0.5"
@@ -8460,7 +8460,7 @@ ${index.message}`;
                     key="all-items"
                     className={`cursor-pointer px-4 py-1 hover:text-[#ffffff] hover:bg-[#387478] mb-1 rounded-xl text-xs lg:text-sm font-semibold  ${
                       selectedBarCategory === null
-                        ? "bg-[#629584] text-white"
+                        ? "bg-[#3b7b80] text-white"
                         : ""
                     } ${!tableId ? "cursor-not-allowed opacity-50" : ""}`} // Disabled styling
                     onClick={
@@ -8475,7 +8475,7 @@ ${index.message}`;
                       key={category._id}
                       className={`whitespace-nowrap bg-[#E2F1E7] hover:bg-[#387478] hover:text-[#ffffff]  cursor-pointer px-5 ml-3 py-1 mb-1 rounded-xl lg:text-sm md:text-sm text-xs sm:text-xs font-semibold ${
                         selectedBarCategory === category
-                          ? "bg-[#387478]  text-white"
+                          ? "bg-[#3b7b80]  text-white"
                           : ""
                       }`}
                       onClick={() => handleBarCategoryClick(category)}
@@ -8856,7 +8856,7 @@ ${index.message}`;
                 </div>
               )}
             </div>
-            <div className=" lg:w-[35.70%] w-full md:w-[40.70%] lg:-ml-1 md:ml-0 ml-3  bg-[#E2F1E7] -mt-3  relative  ">
+            <div className=" lg:w-[35.70%] w-full md:w-[40.70%] lg:-ml-1 md:ml-0 ml-3  bg-[#E2F1E7] -mt-3   relative ">
               <div
                 className="md:hidden cursor-pointer mr-1 absolute top-2 right-0 mb-2 rounded-md"
                 onClick={handleToggle}

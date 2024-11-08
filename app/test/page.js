@@ -239,7 +239,7 @@ useEffect(() => {
                 className={`bg-white cursor-pointer mb-2 p-2 rounded-md border-2 
                 ${bills[table._id]?.isTemporary
                     ? bills[table._id]?.isPrint === 1
-                      ? "border-green-600 bg-[#b8f3cb]"
+                      ? "border-green-600 bg-[#9ee8b5]"
                       : "border-yellow-600 bg-yellow-100"
                     : "border-gray-500"
                   } w-16 h-12 `}

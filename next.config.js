@@ -1,17 +1,28 @@
-/** @type {import('next').NextConfig} */
-// const nextConfig = {}
+// /** @type {import('next').NextConfig} */
+// // const nextConfig = {}
 
-// module.exports = nextConfig
+// // module.exports = nextConfig
 
 
-const nextConfig = {
-    images: {
-      domains: ['192.168.1.9'], // Add your 192.168.1.9 hostname here
-    },
-    server: {
-      host: '0.0.0.0',
-      port: 3000, // or your preferred port
-    },
-  }
+// const nextConfig = {
+//     images: {
+//       domains: ['192.168.1.9'], // Add your 192.168.1.9 hostname here
+//     },
+//     server: {
+//       host: '0.0.0.0',
+//       port: 3000, // or your preferred port
+//     },
+//   }
   
-  module.exports = nextConfig
+//   module.exports = nextConfig
+
+
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+      domains: ['192.168.1.9'], // Add your 192.168.1.9 hostname here for external images
+  },
+};
+
+module.exports = nextConfig;

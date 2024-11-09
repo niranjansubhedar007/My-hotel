@@ -8412,10 +8412,7 @@ ${index.message}`;
                   key="all-items"
                   className={`cursor-pointer mb-2 px-4 rounded-xl p-1 hover:text-[#ffffff] hover:bg-[#387478]
                      text-xs lg:text-sm font-semibold mr-2 flex items-center justify-center ${
-                       selectedCategory === null
-                                              ? "bg-[#000]  text-white"
-
-                         : ""
+                       selectedCategory === null ? "bg-[#000]  text-white" : ""
                      }`}
                   onClick={() => handleCategoryClick(null)}
                 >
@@ -8428,8 +8425,7 @@ ${index.message}`;
                       key={category._id}
                       className={`bg-[#E2F1E7] hover:bg-[#387478] hover:text-[#ffffff] cursor-pointer px-5 ml-1 mr-2 py-1 mb-2 rounded-xl lg:text-sm md:text-sm text-xs sm:text-xs font-semibold ${
                         selectedCategory === category
-                                              ? "bg-[#000]  text-white"
-
+                          ? "bg-[#000]  text-red-500"
                           : ""
                       }`}
                       onClick={() => handleCategoryClick(category)}
@@ -8440,7 +8436,7 @@ ${index.message}`;
                     </span>
                   ))}
 
-                {categories.length > 4 && ( 
+                {categories.length > 4 && (
                   <div className="flex items-center -mt-1 ">
                     <button
                       className="  h-7 w-7 flex items-center justify-center rotate-90 cursor-pointer rounded-lg
@@ -8462,8 +8458,7 @@ ${index.message}`;
                     key="all-items"
                     className={`cursor-pointer px-4 py-1 hover:text-[#ffffff] hover:bg-[#387478] mb-1 rounded-xl text-xs lg:text-sm font-semibold  ${
                       selectedBarCategory === null
-                                                ? "bg-[#000]  text-white"
-
+                        ? "bg-[#000]  text-white"
                         : ""
                     } ${!tableId ? "cursor-not-allowed opacity-50" : ""}`} // Disabled styling
                     onClick={
@@ -8478,7 +8473,7 @@ ${index.message}`;
                       key={category._id}
                       className={`whitespace-nowrap bg-[#E2F1E7] hover:bg-[#387478] hover:text-[#ffffff]  cursor-pointer px-5 ml-3 py-1 mb-1 rounded-xl lg:text-sm md:text-sm text-xs sm:text-xs font-semibold ${
                         selectedBarCategory === category
-                          ? "bg-[#000]  text-white"
+                          ? "bg-[#000]  text-red-500"
                           : ""
                       }`}
                       onClick={() => handleBarCategoryClick(category)}
@@ -8680,8 +8675,10 @@ ${index.message}`;
                               onClick={() => addToOrder(childMenu)}
                             >
                               {showStockQty && (
-                                <p className="text-center font-bold text-xs text-white mb-1 
-                                bg-[#629584] rounded-md p-1">
+                                <p
+                                  className="text-center font-bold text-xs text-white mb-1 
+                                bg-[#629584] rounded-md p-1"
+                                >
                                   <i>
                                     {stockQtyBottles} Bottles{" "}
                                     {stockQtyMl ? `+ ${stockQtyMl} ml` : ""}
@@ -8831,8 +8828,10 @@ ${index.message}`;
                                 onClick={() => addToOrder(price)}
                               >
                                 {showStockQty && (
-                                  <p className="text-center font-bold text-xs text-white mb-1 
-                                bg-[#629584] rounded-md p-1">
+                                  <p
+                                    className="text-center font-bold text-xs text-white mb-1 
+                                bg-[#629584] rounded-md p-1"
+                                  >
                                     <i>
                                       {stockQtyBottles} Bottles{" "}
                                       {stockQtyMl ? `+ ${stockQtyMl} ml` : ""}
@@ -9931,10 +9930,7 @@ ${index.message}`;
                   <span
                     key="all-items"
                     className={`cursor-pointer px-2  py-1 mb-1 hover:text-[#ffffff] hover:bg-[#387478] rounded-2xl text-xs lg:text-sm font-semibold mr-4 ${
-                      selectedCategory === null
-                         ? "bg-[#629584] text-white"
-
-                        : ""
+                      selectedCategory === null ? "bg-[#629584] text-white" : ""
                     }`}
                     onClick={() => handleCategoryClick(null)}
                   >
@@ -9946,7 +9942,6 @@ ${index.message}`;
                       className={`whitespace-nowrap cursor-pointer bg-[#E2F1E7] hover:bg-[#387478] hover:text-[#ffffff]  px-2 ml-3 py-1 mb-1 rounded-2xl lg:text-sm md:text-sm text-xs sm:text-xs font-semibold ${
                         selectedCategory === category
                           ? "bg-[#387478] text-white"
-
                           : ""
                       }`}
                       onClick={() => handleCategoryClick(category)}
@@ -9960,9 +9955,7 @@ ${index.message}`;
                     key="all-items"
                     className={`cursor-pointer hover:text-[#ffffff] hover:bg-[#387478] px-2 py-1 mb-1 rounded-2xl text-xs lg:text-sm font-semibold mr-4 ${
                       selectedBarCategory === null
-                       ? "bg-[#629584] text-white"
-
-
+                        ? "bg-[#629584] text-white"
                         : ""
                     } ${!tableId ? "cursor-not-allowed opacity-50" : ""}`} // Disabled styling
                     onClick={
@@ -9977,8 +9970,7 @@ ${index.message}`;
                       key={category._id}
                       className={`whitespace-nowrap cursor-pointer bg-[#E2F1E7] hover:bg-[#387478] hover:text-[#ffffff]   px-2 ml-3 py-1 mb-1 rounded-2xl lg:text-sm md:text-sm text-xs sm:text-xs font-semibold ${
                         selectedBarCategory === category
-                         ? "bg-[#387478]  text-white"
-
+                          ? "bg-[#387478]  text-white"
                           : ""
                       }`}
                       onClick={() => handleBarCategoryClick(category)}
@@ -10194,8 +10186,10 @@ ${index.message}`;
                                   onClick={() => addToOrder(childMenu)}
                                 >
                                   {showStockQty && (
-                                    <p className="text-center font-bold text-xs text-white mb-1 
-                                bg-[#629584] rounded-md">
+                                    <p
+                                      className="text-center font-bold text-xs text-white mb-1 
+                                bg-[#629584] rounded-md"
+                                    >
                                       <i>
                                         {stockQtyBottles} Bottles{" "}
                                         {stockQtyMl ? `+ ${stockQtyMl} ml` : ""}
@@ -10344,8 +10338,10 @@ ${index.message}`;
                                   onClick={() => addToOrder(price)}
                                 >
                                   {showStockQty && (
-                                    <p className="text-center font-bold text-xs text-white mb-1 
-                                bg-[#629584] rounded-md">
+                                    <p
+                                      className="text-center font-bold text-xs text-white mb-1 
+                                bg-[#629584] rounded-md"
+                                    >
                                       <i>
                                         {stockQtyBottles} Bottles{" "}
                                         {stockQtyMl ? `+ ${stockQtyMl} ml` : ""}

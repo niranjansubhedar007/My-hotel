@@ -443,7 +443,7 @@ const OrderSidebar = () => {
                     <FontAwesomeIcon
                       icon={faHouse}
                       onClick={home}
-                      className="cursor-pointer text-xl  text-[#ffffff] hover:text-[#387478] mt-0.5"
+                      className="cursor-pointer text-xl  text-[#ffffff] hover:text-[#b9e8eb] mt-0.5"
                     />
                   </div>
                   <div>
@@ -463,7 +463,7 @@ const OrderSidebar = () => {
                       <FontAwesomeIcon
                         icon={faBell}
                         onClick={openModal}
-                        className="cursor-pointer text-xl mt-1 ml-1 text-[#ffffff] hover:text-[#387478]"
+                        className="cursor-pointer text-xl mt-1 ml-1 text-[#ffffff] hover:text-[#b9e8eb]"
                       />
                       {itemCount > 0 && (
                         <span
@@ -612,7 +612,7 @@ const OrderSidebar = () => {
                     <FontAwesomeIcon
                       icon={faRightFromBracket}
                       onClick={logout}
-                      className="cursor-pointer text-xl text-[#ffffff] hover:text-[#387478] ml-3 mt-1"
+                      className="cursor-pointer text-xl text-[#ffffff] hover:text-[#b9e8eb] ml-3 mt-1"
                     />
                   </div>
                 </div>
